@@ -7,11 +7,14 @@ $('body').on('click', '.password-control', function(){
   return false;
 });
 
-$('.phone').mask("+7(999)999-9999");
+$('.phone').on('focus', function(){
+  if ($(this).val()==""){$(this).val("+7")}
+});
+
 
 
 function PhoneValid(){
-  let mask =/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g;
+  let mask =/\+\d{1}\d{3}\d{3}\d{4}/g;
   phone = $('.phone').val();
   if((mask.test(phone)==true) && (phone.length>0)){
     if ($('.phone').hasClass('error')){ $('.phone').removeClass('error');}

@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html, body {
+  margin: 0 0 0 0;
+  height: 100% !important;
+}
+
 body {
   margin: 0 0 0 0;
-  background: url("../img/Group.svg") no-repeat 1631px 895px, url("../img/Group (1).svg") no-repeat left 678px, url("../img/Group (2).svg") no-repeat 439px 642px, url("../img/Group (3).svg") no-repeat 416px 793.51px, url("../img/Group (4).svg") no-repeat 1356.65px 811.28px, url("../img/Group (5).svg") no-repeat 958px 111px, url("../img/Group (6).svg") no-repeat 495.95px 0, url("../img/Group (7).svg") no-repeat 385.22px 462.45px, url("../img/Brusko logo.png") no-repeat 26px 26px, linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%);
+  padding: 0;
+  background: url("../img/Group.svg") no-repeat right bottom, url("../img/Group (1).svg") no-repeat left bottom, url("../img/Group (2).svg") no-repeat 439px 642px, url("../img/Group (3).svg") no-repeat 416px 793.51px, url("../img/Group (4).svg") no-repeat 1356.65px 811.28px, url("../img/Group (5).svg") no-repeat 958px 111px, url("../img/Group (6).svg") no-repeat 495.95px 0, url("../img/Group (7).svg") no-repeat 385.22px 462.45px, url("../img/Brusko logo.png") no-repeat 26px 26px, linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   color: #FFFFFF;
@@ -193,6 +200,150 @@ form input {
   background-size: 245px 133px;
   top: 305.1px;
   left: 419.37px;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+@media screen and (max-width: 1450px) {
+  body {
+    background: url("../img/Group.svg") no-repeat right bottom, url("../img/Group (1).svg") no-repeat left bottom, url("../img/Group (2).svg") no-repeat 439px 642px, url("../img/Group (3).svg") no-repeat 416px 793.51px, url("../img/Group (4).svg") no-repeat 975px 740px, url("../img/Group (5).svg") no-repeat 958px 111px, url("../img/Group (6).svg") no-repeat 495.95px 0, url("../img/Group (7).svg") no-repeat 153px 428px, url("../img/Brusko logo.png") no-repeat 26px 26px, linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+
+  h1 {
+    margin-top: 25px;
+  }
+
+  .glass_form {
+    position: absolute;
+    left: calc(50% - 345px);
+    width: 690px !important;
+    height: 730px !important;
+  }
+
+  form {
+    margin-top: 15px;
+  }
+
+  .form_input:first-child {
+    margin-bottom: 26px;
+  }
+
+  .form_select {
+    margin-bottom: 26px;
+  }
+
+  .bg-1 {
+    top: 669px;
+    left: 930px;
+  }
+
+  .bg-2 {
+    width: 200px;
+    height: 110px;
+    background-size: 200px 110px;
+    top: 305.1px;
+    left: 187.37px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  body {
+    background: url("../img/Group.svg") no-repeat right bottom, url("../img/Group (1).svg") no-repeat left bottom, url("../img/Brusko logo.png") no-repeat 50% 26px, linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+
+  h1 {
+    margin-top: 25px;
+  }
+
+  .glass_form {
+    position: absolute;
+    left: calc(50% - 345px);
+    width: 690px !important;
+    height: 730px !important;
+    margin-top: 83px;
+  }
+
+  form {
+    margin-top: 15px;
+  }
+
+  .form_input:first-child {
+    margin-bottom: 26px;
+  }
+
+  .form_select {
+    margin-bottom: 26px;
+  }
+
+  .bg-1 {
+    display: none;
+  }
+
+  .bg-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    background: url("../img/Group.svg") no-repeat right bottom, url("../img/Group (1).svg") no-repeat left bottom, url("../img/Brusko logo.png") no-repeat 50% 26px, linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+
+  h1 {
+    margin-top: 25px;
+    font-size: 30px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .glass_form {
+    position: absolute;
+    left: calc(50% - 150px);
+    width: 300px !important;
+    height: 750px !important;
+    margin-top: 83px;
+  }
+
+  form {
+    margin: 15px 10px 32px 10px;
+  }
+  form input {
+    width: 280px;
+  }
+
+  .form_input:first-child {
+    margin-bottom: 26px;
+  }
+
+  .form_select {
+    margin-bottom: 26px;
+  }
+  .form_select select {
+    width: 280px;
+    background: url("data:image/svg+xml,%3Csvg width='7' height='4' viewBox='0 0 7 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.13147 0.295013L3.60504 2.58501L1.07861 0.295013L0.302521 1.00001L3.60504 4.00001L6.90756 1.00001L6.13147 0.295013Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat 260px;
+  }
+
+  .btn {
+    width: 280px;
+  }
+
+  .social_registration .social_link {
+    width: 50px;
+  }
+
+  .password_recovery p {
+    display: none;
+  }
+
+  .bg-1 {
+    display: none;
+  }
+
+  .bg-2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

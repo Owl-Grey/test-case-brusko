@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html, body {
+  margin: 0 0 0 0;
+  height: 100% !important;
+}
 body{
   margin: 0 0 0 0;
-  background: url("../img/Group.svg") no-repeat 1631px 895px,
-  url("../img/Group (1).svg") no-repeat left 678px,
+  padding: 0;
+  background: url("../img/Group.svg") no-repeat right bottom,
+  url("../img/Group (1).svg") no-repeat left bottom,
   url("../img/Group (2).svg") no-repeat  439px 642px,
   url("../img/Group (3).svg") no-repeat 416px 793.51px ,
   url("../img/Group (4).svg") no-repeat 1356.65px 811.28px,
@@ -11,8 +16,8 @@ body{
   url("../img/Group (6).svg") no-repeat 495.95px 0,
   url("../img/Group (7).svg") no-repeat 385.22px 462.45px,
   url("../img/Brusko logo.png") no-repeat 26px 26px,
-  linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%);
-  
+  linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   color: #FFFFFF;
@@ -81,13 +86,13 @@ form{
   margin-bottom: 24px !important;
 }
 .password-control {
-	position: absolute;
-	top: 44px;
-	right: 19px;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1956 9.06667C11.3232 8.72558 11.3879 8.36418 11.3867 8C11.3867 7.19138 11.0654 6.41589 10.4937 5.84411C9.92188 5.27233 9.14639 4.95111 8.33777 4.95111C7.97808 4.95153 7.62135 5.01625 7.28444 5.14222L7.99999 5.88C8.10877 5.8626 8.21873 5.85368 8.32888 5.85333C8.90063 5.85214 9.44963 6.07722 9.85599 6.47942C10.2624 6.88162 10.4931 7.42827 10.4978 8C10.4974 8.11015 10.4885 8.22011 10.4711 8.32889L11.1956 9.06667Z' fill='%23C7D2D6'/%3E%3Cpath d='M15.24 7.79111C13.7422 5.02222 11.1156 3.34667 8.20889 3.34667C7.41749 3.34853 6.63141 3.47604 5.88 3.72445L6.59556 4.44445C7.12261 4.30824 7.66454 4.23807 8.20889 4.23556C10.7111 4.23556 12.9867 5.63111 14.3422 7.98222C13.845 8.85449 13.1858 9.62382 12.4 10.2489L13.0311 10.88C13.9405 10.1464 14.6957 9.24009 15.2533 8.21334L15.3689 8L15.24 7.79111Z' fill='%23C7D2D6'/%3E%3Cpath d='M2.16445 2.56889L4.14667 4.55111C2.89375 5.35783 1.86974 6.47367 1.17334 7.79111L1.05779 8L1.17334 8.21333C2.67112 10.9822 5.29778 12.6578 8.20445 12.6578C9.33896 12.6575 10.4587 12.4008 11.48 11.9067L13.7022 14.1289L14.48 13.4622L2.92445 1.90667L2.16445 2.56889ZM6.49778 6.90222L9.45334 9.85778C9.11939 10.0645 8.73496 10.1752 8.34223 10.1778C8.05686 10.1778 7.77431 10.1214 7.51084 10.0118C7.24736 9.90215 7.00816 9.74152 6.807 9.53912C6.60584 9.33672 6.44669 9.09653 6.3387 8.83239C6.23071 8.56825 6.17603 8.28536 6.17778 8C6.18279 7.6118 6.29342 7.2323 6.49778 6.90222ZM5.85334 6.25778C5.43753 6.84418 5.24264 7.5588 5.30317 8.2751C5.3637 8.99141 5.67574 9.6632 6.18405 10.1715C6.69237 10.6798 7.36415 10.9919 8.08046 11.0524C8.79676 11.1129 9.51138 10.918 10.0978 10.5022L10.8089 11.2133C9.98569 11.5652 9.09971 11.7466 8.20445 11.7467C5.70223 11.7467 3.42667 10.3511 2.07112 8C2.72165 6.8481 3.65855 5.88364 4.79112 5.2L5.85334 6.25778Z' fill='%23C7D2D6'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
+  position: absolute;
+  top: 44px;
+  right: 19px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1956 9.06667C11.3232 8.72558 11.3879 8.36418 11.3867 8C11.3867 7.19138 11.0654 6.41589 10.4937 5.84411C9.92188 5.27233 9.14639 4.95111 8.33777 4.95111C7.97808 4.95153 7.62135 5.01625 7.28444 5.14222L7.99999 5.88C8.10877 5.8626 8.21873 5.85368 8.32888 5.85333C8.90063 5.85214 9.44963 6.07722 9.85599 6.47942C10.2624 6.88162 10.4931 7.42827 10.4978 8C10.4974 8.11015 10.4885 8.22011 10.4711 8.32889L11.1956 9.06667Z' fill='%23C7D2D6'/%3E%3Cpath d='M15.24 7.79111C13.7422 5.02222 11.1156 3.34667 8.20889 3.34667C7.41749 3.34853 6.63141 3.47604 5.88 3.72445L6.59556 4.44445C7.12261 4.30824 7.66454 4.23807 8.20889 4.23556C10.7111 4.23556 12.9867 5.63111 14.3422 7.98222C13.845 8.85449 13.1858 9.62382 12.4 10.2489L13.0311 10.88C13.9405 10.1464 14.6957 9.24009 15.2533 8.21334L15.3689 8L15.24 7.79111Z' fill='%23C7D2D6'/%3E%3Cpath d='M2.16445 2.56889L4.14667 4.55111C2.89375 5.35783 1.86974 6.47367 1.17334 7.79111L1.05779 8L1.17334 8.21333C2.67112 10.9822 5.29778 12.6578 8.20445 12.6578C9.33896 12.6575 10.4587 12.4008 11.48 11.9067L13.7022 14.1289L14.48 13.4622L2.92445 1.90667L2.16445 2.56889ZM6.49778 6.90222L9.45334 9.85778C9.11939 10.0645 8.73496 10.1752 8.34223 10.1778C8.05686 10.1778 7.77431 10.1214 7.51084 10.0118C7.24736 9.90215 7.00816 9.74152 6.807 9.53912C6.60584 9.33672 6.44669 9.09653 6.3387 8.83239C6.23071 8.56825 6.17603 8.28536 6.17778 8C6.18279 7.6118 6.29342 7.2323 6.49778 6.90222ZM5.85334 6.25778C5.43753 6.84418 5.24264 7.5588 5.30317 8.2751C5.3637 8.99141 5.67574 9.6632 6.18405 10.1715C6.69237 10.6798 7.36415 10.9919 8.08046 11.0524C8.79676 11.1129 9.51138 10.918 10.0978 10.5022L10.8089 11.2133C9.98569 11.5652 9.09971 11.7466 8.20445 11.7467C5.70223 11.7467 3.42667 10.3511 2.07112 8C2.72165 6.8481 3.65855 5.88364 4.79112 5.2L5.85334 6.25778Z' fill='%23C7D2D6'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
 }
 .form_select{
   margin-bottom: 30px;
@@ -113,7 +118,7 @@ form{
     option{
       color: black;
     }
-   }
+  }
 }
 .btn{
   margin-top: 0;
@@ -192,4 +197,168 @@ form{
   background-size: 245px 133px;
   top: 305.1px;
   left: 419.37px;
+}
+
+
+
+.error{
+  border: 1px solid red !important;
+}
+
+
+
+
+
+// @import "style/resolution_1366.css";
+// @import "utils/resolution_768";
+// @import "utils/resolution_320";
+
+
+
+
+
+@media screen and (max-width: 1450px){
+  body{
+    background: url("../img/Group.svg") no-repeat right bottom,
+    url("../img/Group (1).svg") no-repeat left bottom,
+    url("../img/Group (2).svg") no-repeat  439px 642px,
+    url("../img/Group (3).svg") no-repeat 416px 793.51px ,
+    url("../img/Group (4).svg") no-repeat 975px 740px,
+    url("../img/Group (5).svg") no-repeat 958px 111px,
+    url("../img/Group (6).svg") no-repeat 495.95px 0,
+    url("../img/Group (7).svg") no-repeat 153px 428px,
+    url("../img/Brusko logo.png") no-repeat 26px 26px,
+    linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+  h1{
+    margin-top: 25px;
+  }
+  .glass_form{
+    position: absolute;
+    left: calc(50% - 690px/2);
+    width: 690px !important;
+    height: 730px !important;
+  }
+  form{
+    margin-top: 15px;
+  }
+  .form_input{
+    &:first-child{
+      margin-bottom: 26px;
+    }
+  }
+  .form_select{
+    margin-bottom: 26px;
+  }
+
+  .bg-1{
+    top: 669px;
+    left: 930px;
+  }
+  .bg-2{
+    width: 200px;
+    height: 110px;
+    background-size: 200px 110px;
+    top: 305.1px;
+    left: 187.37px;
+  }
+}
+
+
+@media screen and (max-width: 1260px){
+  body{
+    background: url("../img/Group.svg") no-repeat right bottom,
+    url("../img/Group (1).svg") no-repeat left bottom,
+    url("../img/Brusko logo.png") no-repeat 50% 26px,
+    linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+  h1{
+    margin-top: 25px;
+  }
+  .glass_form{
+    position: absolute;
+    left: calc(50% - 690px/2);
+    width: 690px !important;
+    height: 730px !important;
+    margin-top: 83px;
+  }
+  form{
+    margin-top: 15px;
+  }
+  .form_input{
+    &:first-child{
+      margin-bottom: 26px;
+    }
+  }
+  .form_select{
+    margin-bottom: 26px;
+  }
+
+  .bg-1{
+    display: none;
+  }
+  .bg-2{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 760px){
+  body{
+    background: url("../img/Group.svg") no-repeat right bottom,
+    url("../img/Group (1).svg") no-repeat left bottom,
+    url("../img/Brusko logo.png") no-repeat 50% 26px,
+    linear-gradient(287.56deg, #0F0C29 0%, #302B63 50%, #24243E 100%) no-repeat;
+  }
+  h1{
+    margin-top: 25px;
+    font-size: 30px;
+  }
+  label{
+    font-size: 16px;
+  }
+  .glass_form{
+    position: absolute;
+    left: calc(50% - 300px/2);
+    width: 300px !important;
+    height: 750px !important;
+    margin-top: 83px;
+  }
+  form{
+    margin: 15px 10px 32px 10px;
+    input{
+      width: 280px;
+    }
+  }
+  .form_input{
+    &:first-child{
+      margin-bottom: 26px;
+    }
+  }
+  .form_select{
+    margin-bottom: 26px;
+    select{
+      width: 280px;
+      background: url("data:image/svg+xml,%3Csvg width='7' height='4' viewBox='0 0 7 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.13147 0.295013L3.60504 2.58501L1.07861 0.295013L0.302521 1.00001L3.60504 4.00001L6.90756 1.00001L6.13147 0.295013Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat 260px;
+    }
+  }
+  .btn{
+    width: 280px;
+  }
+  .social_registration{
+    .social_link{
+      width: 50px;
+    }
+  }
+  .password_recovery{
+    p{
+      display: none;
+    }
+  }
+  .bg-1{
+    display: none;
+  }
+  .bg-2{
+    display: none;
+  }
 }

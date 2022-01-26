@@ -11,30 +11,34 @@
     <div class="glass_form">
       <h1>РЕГИСТРАЦИЯ</h1>
       <form id="ajax_form">
-        <div class="form_input">
+        <div class="form_input phone_input">
           <label>Телефон</label>
-          <input type="tel" name="phone" class="phone" id="InputPhone" placeholder="+7" maxlength="12" minlength="12">
+          <input type="tel" name="phone" class="phone" id="InputPhone" placeholder="+7" autocomplete="off">
+          <p class="error_input hidden_block"></p>
         </div>
         <div class="form_select row justify-content-between align-items-center">
           <div class="col-auto">
             <label>Удобный способ связи:</label>
           </div>
           <div class="col-auto">
-            <select>
-              <option value="1">Телефон</option>
-              <option value="2">Почта</option>
-              <option value="3">Мессенджер</option>
+            <select id="ContactSelect">
+              <option value="phone">Телефон</option>
+              <option value="mail">Почта</option>
+              <option value="messenger">Мессенджер</option>
             </select>
           </div>
         </div>
-        <div class="form_input">
+        <div class="form_input mail_input">
           <label>Email</label>
-          <input type="email" class="email" name="email" id="InputEmail" placeholder="username@gmail.com" minlength="9" maxlength="64">
+          <input type="text" class="email" name="email" id="InputEmail" placeholder="username@gmail.com" maxlength="64">
+          <p class="error_input hidden_block"></p>
+
         </div>
         <div class="form_input password_input">
           <label>Пароль</label>
-          <input type="password" class="password" name=pass id="InputPassword" placeholder="Пароль" minlength="8" maxlength="64">
+          <input type="password" class="password" name=pass id="InputPassword" placeholder="Пароль" maxlength="64">
           <a href="#" class="password-control"></a>
+          <p class="error_input hidden_block"></p>
         </div>
         <button type="submit" class="btn">Ввод</button>
       </form>
@@ -72,7 +76,7 @@
         </div>
       </div>
       <div class="password_recovery row justify-content-center">
-        <div class="col-auto">
+        <div class=" forget_pass col-auto">
           <p>Забыли пароль?</p>
         </div>
         <div class="col-auto">
